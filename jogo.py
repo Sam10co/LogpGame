@@ -1,4 +1,4 @@
-import pygame
+      import pygame
 
 pygame.init()
 
@@ -46,7 +46,10 @@ def menu_principal():
         tela.fill(PRETO)
         desenhar_texto(tela, "Bem-vindo ao Stupid Cupid!", (50, 50))
         desenhar_texto(tela, "Pressione Enter para começar", (50, 100))
-
+        desenhar_texto(tela, "Manualzinho", (50, 100))
+        desenhar_texto(tela, """Aperte com o mouse para pular para o próximo texto
+                                quando se deparar com uma escolha, clique nela com o botão do mouse!
+                                Bom jogo!""", (50, 100))
         for evento in pygame.event.get():
             if evento.type == pygame.QUIT:
                 rodando_menu = False
